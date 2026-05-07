@@ -53,11 +53,18 @@ export default {
         ],
       };
 
-      const slackResponse = await fetch(env.SLACK_WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(slackPayload),
-      });
+      const [slackResponse] = await Promise.all([
+        fetch(env.SLACK_WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(slackPayload),
+        }),
+        fetch(env.ORBIT_HUB_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, service, message }),
+        }).catch((err) => { console.error("Orbit Hub send failed:", err); return null; }),
+      ]);
 
       if (!slackResponse.ok) {
         return new Response(

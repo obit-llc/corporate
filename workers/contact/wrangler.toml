@@ -4,5 +4,6 @@ compatibility_date = "2024-01-01"
 
 [vars]
 ALLOWED_ORIGIN = "https://www.obt-llc.com"
+ORBIT_HUB_URL = "https://orbit-hub.vercel.app/api/inquiries"
 
 # SLACK_WEBHOOK_URL は `wrangler secret put SLACK_WEBHOOK_URL` で設定

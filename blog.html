@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ・コラム | オービット合同会社</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="オービット合同会社のブログ・コラムです。AI導入・業務効率化・採用・COO代行・プロダクト開発など、中小企業経営者に向けた実践的な情報を発信しています。">
+    <link rel="canonical" href="https://www.obt-llc.com/blog.html">
+    <meta property="og:title" content="ブログ・コラム | オービット合同会社">
+    <meta property="og:description" content="AI導入・業務効率化・採用・COO代行など、中小企業経営者に向けた実践的な情報を発信しています。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.obt-llc.com/blog.html">
+    <meta property="og:site_name" content="オービット合同会社">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y40PCZP65"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1Y40PCZP65');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">ORBIT</a>
+        <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">企業情報</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="blog.html" class="active">ブログ</a></li>
+            <li><a href="index.html#services">サービス</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>ブログ・コラム</h1>
+        <p>経営者・事業責任者のためのデジタル活用ノウハウ</p>
+    </header>
+
+    <div class="blog-filters" id="filters">
+        <button class="blog-filter-btn active" data-category="all">すべて</button>
+        <button class="blog-filter-btn" data-category="AI導入">AI導入</button>
+        <button class="blog-filter-btn" data-category="業務効率化">業務効率化</button>
+        <button class="blog-filter-btn" data-category="採用・HR">採用・HR</button>
+        <button class="blog-filter-btn" data-category="COO代行">COO代行</button>
+        <button class="blog-filter-btn" data-category="プロダクト開発">プロダクト開発</button>
+    </div>
+
+    <section class="blog-section">
+        <div class="blog-grid" id="blog-grid">
+            <div class="blog-empty">
+                <p>記事を準備中です。近日公開予定。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ORBIT</div>
+            <p class="footer-copy">&copy; 2025 オービット合同会社. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">企業情報</a></li>
+                <li><a href="works.html">実績</a></li>
+                <li><a href="blog.html">ブログ</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // blog/articles.json から記事一覧を取得して描画
+        async function loadArticles() {
+            let articles = [];
+            try {
+                const res = await fetch('blog/articles.json');
+                if (res.ok) articles = await res.json();
+            } catch {}
+
+            const grid = document.getElementById('blog-grid');
+            if (!articles.length) return;
+
+            renderArticles(articles, 'all');
+
+            document.querySelectorAll('.blog-filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.blog-filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderArticles(articles, btn.dataset.category);
+                });
+            });
+        }
+
+        function renderArticles(articles, category) {
+            const filtered = category === 'all' ? articles : articles.filter(a => a.category === category);
+            const grid = document.getElementById('blog-grid');
+            if (!filtered.length) {
+                grid.innerHTML = '<div class="blog-empty"><p>この カテゴリの記事はまだありません。</p></div>';
+                return;
+            }
+            grid.innerHTML = filtered.map(a => `
+                <a href="blog/${a.slug}.html" class="blog-card">
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">${a.category}</span>
+                        <h3>${a.title}</h3>
+                        <p class="blog-card-excerpt">${a.excerpt}</p>
+                        <div class="blog-card-meta">
+                            <span>${a.date}</span>
+                            <span>${a.readingTime}分で読める</span>
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        loadArticles();
+    </script>
+</body>
+</html>

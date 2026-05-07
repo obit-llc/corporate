@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | オービット合同会社</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="description" content="{{DESCRIPTION}}">
+    <link rel="canonical" href="https://www.obt-llc.com/blog/{{SLUG}}.html">
+    <meta property="og:title" content="{{TITLE}} | オービット合同会社">
+    <meta property="og:description" content="{{DESCRIPTION}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.obt-llc.com/blog/{{SLUG}}.html">
+    <meta property="og:site_name" content="オービット合同会社">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta property="article:published_time" content="{{DATE_ISO}}">
+    <meta property="article:section" content="{{CATEGORY}}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y40PCZP65"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1Y40PCZP65');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{TITLE}}",
+        "description": "{{DESCRIPTION}}",
+        "datePublished": "{{DATE_ISO}}",
+        "author": {
+            "@type": "Organization",
+            "name": "オービット合同会社"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "オービット合同会社",
+            "url": "https://www.obt-llc.com"
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">ORBIT</a>
+        <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../about.html">企業情報</a></li>
+            <li><a href="../works.html">実績</a></li>
+            <li><a href="../blog.html" class="active">ブログ</a></li>
+            <li><a href="../index.html#services">サービス</a></li>
+            <li><a href="../index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <div class="article-header">
+        <nav class="article-breadcrumb">
+            <a href="../index.html">ホーム</a>
+            <span>/</span>
+            <a href="../blog.html">ブログ</a>
+            <span>/</span>
+            <span>{{CATEGORY}}</span>
+        </nav>
+        <span class="article-tag">{{CATEGORY}}</span>
+        <h1>{{TITLE}}</h1>
+        <div class="article-meta">
+            <span>{{DATE}}</span>
+            <span>{{READING_TIME}}分で読める</span>
+        </div>
+    </div>
+
+    <article class="article-body">
+        {{BODY}}
+    </article>
+
+    <div class="article-cta">
+        <div class="article-cta-box">
+            <h3>業務効率化・AI導入のご相談はお気軽に</h3>
+            <p>オービット合同会社は、中小企業の経営課題をデジタルの力で解決します。<br>まずは無料相談からどうぞ。</p>
+            <a href="../index.html#contact" class="btn">無料相談してみる</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ORBIT</div>
+            <p class="footer-copy">&copy; 2025 オービット合同会社. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="../about.html">企業情報</a></li>
+                <li><a href="../works.html">実績</a></li>
+                <li><a href="../blog.html">ブログ</a></li>
+                <li><a href="../index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
