@@ -28,6 +28,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script>
+        // スクロール深度トラッキング
+        window.addEventListener('load', function() {
+            const depths = [25, 50, 75, 100];
+            const reached = new Set();
+            window.addEventListener('scroll', function() {
+                const scrolled = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+                depths.forEach(function(d) {
+                    if (scrolled >= d && !reached.has(d)) {
+                        reached.add(d);
+                        gtag('event', 'scroll_depth', { depth: d, page_path: location.pathname });
+                    }
+                });
+            }, { passive: true });
+
+            // CTAクリックトラッキング
+            document.querySelectorAll('.article-cta .btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    gtag('event', 'cta_click', { page_path: location.pathname, page_title: document.title });
+                });
+            });
+        });
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",

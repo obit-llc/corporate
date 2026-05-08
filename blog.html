@@ -103,13 +103,14 @@
         }
 
         function renderArticles(articles, category) {
-            const filtered = category === 'all' ? articles : articles.filter(a => a.category === category);
+            const published = articles.filter(a => a.status === 'published');
+            const filtered = category === 'all' ? published : published.filter(a => a.category === category);
             const grid = document.getElementById('blog-grid');
             if (!filtered.length) {
                 grid.innerHTML = '<div class="blog-empty"><p>この カテゴリの記事はまだありません。</p></div>';
                 return;
             }
-            grid.innerHTML = filtered.map(a => `
+            grid.innerHTML = filtered.filter(a => a.status === 'published').map(a => `
                 <a href="blog/${a.slug}.html" class="blog-card">
                     <div class="blog-card-body">
                         <span class="blog-card-tag">${a.category}</span>

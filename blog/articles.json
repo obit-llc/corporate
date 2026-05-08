@@ -1,11 +1,21 @@
 [
   {
+    "slug": "coo-agency-selection-guide",
+    "title": "COO代行サービスの選び方｜料金相場・契約形態・依頼すべきタイミング",
+    "excerpt": "COO代行サービスの選び方を徹底解説。料金相場（月額）・契約形態の種類・依頼すべきタイミング・失敗しない選定基準まで、中小企業／スタートアップ経営者向けに実務目線でまとめました。",
+    "category": "COO代行",
+    "date": "2026年5月8日",
+    "readingTime": 9,
+    "status": "published"
+  },
+  {
     "slug": "mvp-development-cost-guide",
     "title": "MVP開発の費用相場とスケジュール感｜失敗しない外注先の選び方",
     "excerpt": "MVP開発の費用相場（規模別）・スケジュール感・外注vs内製の判断基準と、失敗しない外注先の選び方5つのポイントを解説します。",
     "category": "プロダクト開発",
     "date": "2026年5月7日",
-    "readingTime": 7
+    "readingTime": 7,
+    "status": "published"
   },
   {
     "slug": "gyomu-koritsu-idea-30",
@@ -13,7 +23,8 @@
     "excerpt": "業務効率化のアイデアを30個、効果が出やすい順に解説。会議改善・ツール導入・業務フロー改善・生成AI活用までを、現場で使える形でコンサルが具体的に紹介します。",
     "category": "AI導入",
     "date": "2026年5月7日",
-    "readingTime": 12
+    "readingTime": 12,
+    "status": "published"
   },
   {
     "slug": "ai-introduction-sme-5steps",
@@ -21,7 +32,8 @@
     "excerpt": "中小企業のAI導入の始め方を、経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスと、失敗する企業の共通点をまとめました。",
     "category": "AI導入",
     "date": "2026年5月7日",
-    "readingTime": 9
+    "readingTime": 9,
+    "status": "published"
   },
   {
     "slug": "coo-toha-yakuwari-coo-agency",
@@ -29,6 +41,7 @@
     "excerpt": "COO（最高執行責任者）の役割やCEOとの違い、求められるスキル、社外COO（COO代行）の活用方法と料金相場までを実務目線で解説します。",
     "category": "COO代行",
     "date": "2026年5月7日",
-    "readingTime": 7
+    "readingTime": 7,
+    "status": "published"
   }
 ]
