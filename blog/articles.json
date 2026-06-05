@@ -9,24 +9,6 @@
     "status": "published"
   },
   {
-    "slug": "mvp-development-cost-guide",
-    "title": "MVP開発の費用相場とスケジュール感｜失敗しない外注先の選び方",
-    "excerpt": "MVP開発の費用相場（規模別）・スケジュール感・外注vs内製の判断基準と、失敗しない外注先の選び方5つのポイントを解説します。",
-    "category": "プロダクト開発",
-    "date": "2026年5月7日",
-    "readingTime": 7,
-    "status": "published"
-  },
-  {
-    "slug": "gyomu-koritsu-idea-30",
-    "title": "業務効率化のアイデア30選｜効果が出やすい順にコンサルが解説",
-    "excerpt": "業務効率化のアイデアを30個、効果が出やすい順に解説。会議改善・ツール導入・業務フロー改善・生成AI活用までを、現場で使える形でコンサルが具体的に紹介します。",
-    "category": "AI導入",
-    "date": "2026年5月7日",
-    "readingTime": 12,
-    "status": "published"
-  },
-  {
     "slug": "ai-introduction-sme-5steps",
     "title": "中小企業のAI導入はどこから始める？経営者向け5ステップガイド",
     "excerpt": "中小企業のAI導入の始め方を、経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスと、失敗する企業の共通点をまとめました。",
@@ -42,6 +24,51 @@
     "category": "COO代行",
     "date": "2026年5月7日",
     "readingTime": 7,
+    "status": "published"
+  },
+  {
+    "slug": "gyomu-koritsu-idea-30",
+    "title": "業務効率化のアイデア30選｜効果が出やすい順にコンサルが解説",
+    "excerpt": "業務効率化のアイデアを30個、効果が出やすい順に解説。会議改善・ツール導入・業務フロー改善・生成AI活用までを、現場で使える形でコンサルが具体的に紹介します。",
+    "category": "AI導入",
+    "date": "2026年5月7日",
+    "readingTime": 12,
+    "status": "published"
+  },
+  {
+    "slug": "mvp-development-cost-guide",
+    "title": "MVP開発の費用相場とスケジュール感｜失敗しない外注先の選び方",
+    "excerpt": "MVP開発の費用相場（規模別）・スケジュール感・外注vs内製の判断基準と、失敗しない外注先の選び方5つのポイントを解説します。",
+    "category": "プロダクト開発",
+    "date": "2026年5月7日",
+    "readingTime": 7,
+    "status": "published"
+  },
+  {
+    "slug": "ai-failure-patterns",
+    "title": "AI導入で失敗する中小企業の共通点と7つの落とし穴",
+    "excerpt": "AI導入で失敗する中小企業の共通点を、PoC止まり・現場の抵抗・ROI未測定など7つの落とし穴に整理。回避策と導入ステップを経営者向けにまとめました。",
+    "category": "AI導入",
+    "date": "2026年5月18日",
+    "readingTime": 11,
+    "status": "published"
+  },
+  {
+    "slug": "backoffice-automation",
+    "title": "バックオフィス業務を自動化する方法｜経理・労務・総務のAI活用例",
+    "excerpt": "経理・労務・総務のバックオフィス業務を自動化する具体的な方法を解説。RPA・SaaS・生成AIの使い分け、部門別の自動化例、導入の進め方、よくある失敗まで中小企業向けにまとめました。",
+    "category": "業務効率化",
+    "date": "2026年5月10日",
+    "readingTime": 10,
+    "status": "published"
+  },
+  {
+    "slug": "coo-loop-break",
+    "title": "「経営者が現場仕事から抜けられない」中小企業の負のループを断ち切る方法",
+    "excerpt": "経営者が現場から抜けられない負のループの構造を解きほぐし、委譲・仕組み化・外部活用の3軸と90日ロードマップで断ち切る方法を解説します。",
+    "category": "COO代行",
+    "date": "2026-05-25",
+    "readingTime": 10,
     "status": "published"
   }
 ]
