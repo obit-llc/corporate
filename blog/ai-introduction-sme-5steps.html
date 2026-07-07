@@ -1,210 +1,156 @@
-```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中小企業のAI導入はどこから始める？経営者向け5ステップガイド | オービット合同会社</title>
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <meta name="description" content="中小企業のAI導入の始め方を、経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスと、失敗する企業の共通点をまとめました。">
-    <link rel="canonical" href="https://www.obt-llc.com/blog/ai-introduction-sme-5steps.html">
-    <meta property="og:title" content="中小企業のAI導入はどこから始める？経営者向け5ステップガイド | オービット合同会社">
-    <meta property="og:description" content="中小企業のAI導入の始め方を、経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスと、失敗する企業の共通点をまとめました。">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.obt-llc.com/blog/ai-introduction-sme-5steps.html">
-    <meta property="og:site_name" content="オービット合同会社">
-    <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:card" content="summary">
-    <meta property="article:published_time" content="2026-05-07">
-    <meta property="article:section" content="AI導入">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y40PCZP65"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-1Y40PCZP65');
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "中小企業のAI導入はどこから始める？経営者向け5ステップガイド",
-        "description": "中小企業のAI導入の始め方を、経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスと、失敗する企業の共通点をまとめました。",
-        "datePublished": "2026-05-07",
-        "author": {
-            "@type": "Organization",
-            "name": "オービット合同会社"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "オービット合同会社",
-            "url": "https://www.obt-llc.com"
-        }
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中小企業のAI導入はどこから始める？経営者向け5ステップガイド | オービット合同会社</title>
+  <meta name="description" content="中小企業のAI導入の始め方を経営者向けに5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開までの実践プロセスを具体的にまとめました。">
+  <meta name="keywords" content="AI導入,中小企業,AI活用,ChatGPT,業務効率化,AI導入ステップ,DX">
+  <link rel="canonical" href="https://obt-llc.com/blog/ai-introduction-sme-5steps">
+
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="中小企業のAI導入はどこから始める？経営者向け5ステップガイド">
+  <meta property="og:description" content="業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開。中小企業のAI導入を5ステップで解説。">
+  <meta property="og:url" content="https://obt-llc.com/blog/ai-introduction-sme-5steps">
+  <meta property="og:site_name" content="オービット合同会社">
+  <meta property="og:image" content="https://obt-llc.com/images/ogp/ai-introduction-sme-5steps.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="article:published_time" content="2026-05-07">
+  <meta property="article:author" content="オービット合同会社">
+  <meta property="article:section" content="AI導入">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="中小企業のAI導入はどこから始める？経営者向け5ステップガイド">
+  <meta name="twitter:description" content="業務棚卸しからPoC・全社展開まで。中小企業のAI導入を5ステップで解説。">
+  <meta name="twitter:image" content="https://obt-llc.com/images/ogp/ai-introduction-sme-5steps.jpg">
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "中小企業のAI導入はどこから始める？経営者向け5ステップガイド",
+    "description": "中小企業のAI導入を5ステップで解説。業務棚卸し→AI化対象の特定→PoC→効果測定→全社展開。",
+    "image": "https://obt-llc.com/images/ogp/ai-introduction-sme-5steps.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "オービット合同会社",
+      "url": "https://obt-llc.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "オービット合同会社",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://obt-llc.com/images/logo.png"
+      }
+    },
+    "datePublished": "2026-05-07",
+    "dateModified": "2026-07-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://obt-llc.com/blog/ai-introduction-sme-5steps"
+    },
+    "keywords": ["AI導入", "中小企業", "ChatGPT", "業務効率化", "DX"],
+    "articleSection": "AI導入"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "中小企業がAIを導入する5ステップ",
+    "description": "中小企業が失敗せずにAI導入を進めるための5つのステップ",
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "業務棚卸し", "text": "全業務を一覧化し、工数・繰り返し性・ルール明確性を評価する"},
+      {"@type": "HowToStep", "position": 2, "name": "AI化対象の特定", "text": "工数大・繰り返し性高・ルール明確な業務をAI化候補に選ぶ"},
+      {"@type": "HowToStep", "position": 3, "name": "PoC（概念実証）", "text": "小規模・短期間でAIツールを試験導入し、効果を検証する"},
+      {"@type": "HowToStep", "position": 4, "name": "効果測定", "text": "削減工数・コスト・品質向上を数値で測定する"},
+      {"@type": "HowToStep", "position": 5, "name": "全社展開", "text": "成功事例を他部門・他業務に横展開し、継続的に改善する"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://obt-llc.com"},
+      {"@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://obt-llc.com/blog"},
+      {"@type": "ListItem", "position": 3, "name": "中小企業のAI導入はどこから始める？", "item": "https://obt-llc.com/blog/ai-introduction-sme-5steps"}
+    ]
+  }
+  </script>
 </head>
 <body>
-    <nav>
-        <a href="../index.html" class="logo">ORBIT</a>
-        <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="メニュー">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="../index.html">ホーム</a></li>
-            <li><a href="../about.html">企業情報</a></li>
-            <li><a href="../works.html">実績</a></li>
-            <li><a href="../blog.html" class="active">ブログ</a></li>
-            <li><a href="../index.html#services">サービス</a></li>
-            <li><a href="../index.html#contact">お問い合わせ</a></li>
-        </ul>
-    </nav>
+<article>
+<h1>中小企業のAI導入はどこから始める？経営者向け5ステップガイド</h1>
 
-    <div class="article-header">
-        <nav class="article-breadcrumb">
-            <a href="../index.html">ホーム</a>
-            <span>/</span>
-            <a href="../blog.html">ブログ</a>
-            <span>/</span>
-            <span>AI導入</span>
-        </nav>
-        <span class="article-tag">AI導入</span>
-        <h1>中小企業のAI導入はどこから始める？経営者向け5ステップガイド</h1>
-        <div class="article-meta">
-            <span>2026年5月7日</span>
-            <span>9分で読める</span>
-        </div>
-    </div>
+<nav aria-label="目次" style="background:#f8fafc;padding:1.5rem;border-radius:8px;margin-bottom:2rem;">
+  <p style="font-weight:bold;margin:0 0 0.75rem;">📋 目次</p>
+  <ol style="margin:0;padding-left:1.5rem;">
+    <li><a href="#step1">STEP1：業務棚卸し</a></li>
+    <li><a href="#step2">STEP2：AI化対象の特定</a></li>
+    <li><a href="#step3">STEP3：PoC（概念実証）</a></li>
+    <li><a href="#step4">STEP4：効果測定</a></li>
+    <li><a href="#step5">STEP5：全社展開</a></li>
+    <li><a href="#pitfalls">失敗する企業の共通点</a></li>
+  </ol>
+</nav>
 
-    <div class="article-eyecatch"><img src="https://www.obt-llc.com/blog/images/ai-introduction-sme-5steps.jpg" alt="中小企業のAI導入はどこから始める？経営者向け5ステップガイド" style="width:100%;height:auto;display:block;border-radius:8px;margin-bottom:2rem;" loading="lazy"></div>
-<article class="article-body">
-        <p>「ChatGPTや生成AIが話題だけど、自社で何にどう使えばいいのか分からない」「AI導入を検討したいが、どこから手を付ければいいか見当がつかない」――中小企業の経営者からよく聞く声です。AIは使いこなせば強力な武器になりますが、流行りに乗って闇雲にツールを入れても成果は出ません。重要なのは、自社の業務課題を起点に、段階を踏んで着実に進めることです。</p>
-        <p>本記事では、中小企業がAI導入を始めるときに踏むべき5つのステップを、経営者目線で整理します。AIとDXの違い、得られるメリット、失敗パターンも併せて解説するので、最初の一歩を踏み出すための判断材料としてご活用ください。</p>
+<h2>なぜ中小企業のAI導入は失敗するのか</h2>
+<p>「ChatGPTを試したが業務で使いこなせていない」「AI導入プロジェクトが立ち上がったが成果が出ない」——こうした声が中小企業の経営者から多く聞かれます。失敗の根本原因は「何をAIで解決するか」が明確でないまま、ツール導入から入ってしまうことです。</p>
 
-        <h2>そもそもAI導入とは？DXとの違い</h2>
-        <p>AI導入とDX（デジタルトランスフォーメーション）は混同されがちですが、目的とスコープが異なります。</p>
-        <p><strong>DX</strong>は「デジタル技術を活用して、業務プロセスやビジネスモデル、組織文化そのものを変革すること」を指す広い概念です。一方<strong>AI導入</strong>は、その手段の一つで、機械学習や生成AIといった技術を業務に組み込み、これまで人がやっていた判断・分類・文章作成・予測などを機械に任せる取り組みを指します。</p>
-        <p>つまり、DXという大きな変革の中に、AI導入という具体的な打ち手が含まれているイメージです。中小企業の場合、いきなり全社DXを掲げるよりも、「特定業務のAI化」から始めて成功体験を積み、徐々に範囲を広げる方が現実的かつ効果的です。</p>
+<h2 id="step1">STEP1：業務棚卸し（所要時間：1〜2週間）</h2>
+<p>まず全業務を一覧化します。部門ごとに「業務名・担当者・月間工数・繰り返し性・判断の複雑さ」を整理するだけで、AI化候補が見えてきます。</p>
+<p>棚卸しのポイントは「属人化している業務」に注目すること。特定の人しかできない業務ほど、AI化・標準化の効果が大きいです。</p>
 
-        <h2>中小企業がAI導入で得られる3つのメリット</h2>
-        <p>AI導入は単なる流行ではなく、人手不足が深刻な中小企業ほど投資対効果が大きい施策です。代表的な3つのメリットを押さえておきましょう。</p>
-        <h3>1. 人手不足の解消と労働生産性の向上</h3>
-        <p>議事録作成、メール文面作成、データ入力、問い合わせ一次対応など、定型的な業務はAIに任せられます。1人あたり1日30分の作業を削減できれば、10人の組織で月100時間以上の余力が生まれます。少人数で運営する中小企業ほど、この効果は経営インパクトとして大きく現れます。</p>
-        <h3>2. 属人化の解消とナレッジの標準化</h3>
-        <p>「ベテラン社員にしか分からない判断業務」をAIに学習させることで、暗黙知を形式知に変換できます。社内マニュアルや過去の問い合わせ履歴をAIに読み込ませてチャットボット化すれば、新人でもベテラン並みの回答品質を実現できます。</p>
-        <h3>3. 意思決定スピードの向上</h3>
-        <p>売上データや顧客データをAIで分析することで、人間では気づきにくいパターンを抽出できます。これまで「勘と経験」に頼っていた経営判断を、データに基づいた仮説検証型のスタイルに転換できる点も大きな価値です。</p>
+<h2 id="step2">STEP2：AI化対象の特定（所要時間：1週間）</h2>
+<p>棚卸し結果から「繰り返し性が高い」「ルールが明確」「工数が大きい」の3条件が揃う業務を優先します。</p>
+<ul>
+  <li>✅ 適性が高い：請求書処理、議事録作成、メール下書き、データ入力・集計</li>
+  <li>❌ 適性が低い：高度な交渉・感情的判断・倫理的判断が必要な業務</li>
+</ul>
 
-        <h2>AI導入に失敗する企業の共通点</h2>
-        <p>一方で、AIを導入したものの「結局使われずに終わった」という事例も少なくありません。<a href="/blog/ai-failure-patterns.html">失敗するケースには共通したパターン</a>があります。</p>
-        <ul>
-            <li><strong>目的が「AI導入そのもの」になっている</strong>：手段が目的化し、「何のための導入か」が曖昧なまま進む。</li>
-            <li><strong>現場の業務理解が不足している</strong>：経営層やIT部門だけで決め、実務担当者の課題感とずれる。</li>
-            <li><strong>いきなり大規模導入する</strong>：高額なシステムを一括導入し、効果が出ないまま塩漬けになる。</li>
-            <li><strong>運用体制が決まっていない</strong>：導入後の改善・教育を担当する人がおらず、徐々に使われなくなる。</li>
-            <li><strong>データ整備を後回しにする</strong>：AIに食わせるデータがバラバラで、精度が出ない。</li>
-        </ul>
-        <p>逆に言えば、これらを避けて「課題起点・小さく始める・運用設計まで含める」を徹底すれば、失敗確率は大きく下げられます。次章から、その具体的な進め方を5ステップで解説します。</p>
+<h2 id="step3">STEP3：PoC（概念実証）（所要時間：2〜4週間）</h2>
+<p>選んだ業務で小規模に試験導入します。このフェーズで重要なのは「完璧を求めない」こと。まず使ってみて、現場の反応を確認することが目的です。</p>
+<p>具体的なツール選定の参考として、<a href="/blog/chatgpt-business-use-cases">ChatGPTを業務で活用する20の具体例</a>をあわせてご覧ください。</p>
 
-        <h2>【ステップ1】現状の業務課題を棚卸しする</h2>
-        <p>最初にやるべきは、AIの話を一旦脇に置き、自社の業務課題を洗い出すことです。「どこに時間がかかっているか」「どこでミスが多いか」「誰かに依存している業務はどれか」を可視化します。</p>
-        <p>具体的には、以下のような観点で部署ごとにヒアリングするのが有効です。</p>
-        <ul>
-            <li>毎日・毎週・毎月発生する繰り返し業務は何か</li>
-            <li>その業務に1日あたり何時間使っているか</li>
-            <li>担当者が休むと止まる業務はあるか</li>
-            <li>クレームやミスが起きやすい工程はどこか</li>
-            <li>「もっと早ければいいのに」と感じる業務は何か</li>
-        </ul>
-        <p>このとき重要なのは、<strong>定量化</strong>することです。「議事録作成に週5時間」「請求書処理に月20時間」と数字で押さえると、後の効果測定が容易になります。経営者の感覚と現場の実感はずれていることが多いので、必ず現場の声を拾いましょう。</p>
+<h2 id="step4">STEP4：効果測定（PoCと並行）</h2>
+<p>削減時間・コスト・ミス率・担当者の満足度を数値で記録します。「なんとなく楽になった」では次のステップに進めません。数字で示せるKPIを設定することが全社展開の説得材料になります。</p>
 
-        <h2>【ステップ2】AI化できる業務を特定する</h2>
-        <p>棚卸しした業務の中から、AIで効率化できそうなものを選びます。判断基準は次の3つです。</p>
-        <ol>
-            <li><strong>頻度が高い</strong>：毎日・毎週発生し、改善効果が積み上がる業務</li>
-            <li><strong>パターン化できる</strong>：判断基準やフォーマットがある程度決まっている業務</li>
-            <li><strong>データが揃っている</strong>：過去の事例や入出力データが残っている業務</li>
-        </ol>
-        <p>中小企業で特にAI化と相性が良い業務の例を挙げます。</p>
-        <ul>
-            <li><strong>文書作成系</strong>：議事録、メール返信、提案書ドラフト、SNS投稿文</li>
-            <li><strong>分類・抽出系</strong>：問い合わせメールの仕分け、領収書の項目抽出、契約書のチェック</li>
-            <li><strong>応対系</strong>：FAQチャットボット、社内ヘルプデスク、求人応募者への一次返信</li>
-            <li><strong>分析系</strong>：売上データの傾向分析、顧客セグメント抽出、需要予測</li>
-        </ul>
-        <p>すべてを一度に対象にするのではなく、<strong>「効果が大きく、難易度が低いもの」を1〜2件選ぶ</strong>のがコツです。最初の成功体験が、その後の社内合意形成を大きく左右します。なお、<a href="/blog/backoffice-automation.html">経理・労務・総務などバックオフィス業務のAI活用</a>は、業務の定型化度が高くAI化の難易度が低いため、最初の候補として特に適しています。</p>
+<h2 id="step5">STEP5：全社展開（PoC成功後）</h2>
+<p>成功事例を他部門・他業務に横展開します。このとき「社内AIガイドライン」を作成し、情報セキュリティ・使用ルールを整備することが重要です。</p>
+<p>バックオフィス業務の自動化と組み合わせることで、より大きな効果が得られます。詳しくは<a href="/blog/backoffice-automation">バックオフィス業務を自動化する方法</a>をご覧ください。</p>
 
-        <h2>【ステップ3】スモールスタートで試す（PoC）</h2>
-        <p>対象業務が決まったら、いきなり全社導入せず、まずは<strong>PoC（Proof of Concept：概念実証）</strong>として小規模に試します。期間は1〜3ヶ月、対象は1部署または特定業務に絞るのが基本です。</p>
-        <p>このフェーズで意識したいポイントは次の通りです。</p>
-        <ul>
-            <li><strong>既存ツールを活用する</strong>：いきなりオーダーメイド開発をせず、ChatGPT、Microsoft Copilot、Notion AIなど、月額数千円〜の汎用ツールから試す。</li>
-            <li><strong>成功基準を事前に決める</strong>：「議事録作成時間を50%削減」「問い合わせ一次対応の自動化率70%」など、数値目標を立てる。</li>
-            <li><strong>現場のキーパーソンを巻き込む</strong>：トップダウンだけでなく、実際に使う担当者を主役にし、フィードバックを集める。</li>
-            <li><strong>セキュリティルールを整備する</strong>：機密情報を入力しないルール、利用するAIサービスの選定基準を最初に決める。</li>
-        </ul>
-        <p>PoCの目的は「効果検証」と「社内学習」です。たとえ期待通りの成果が出なくても、「自社のデータでどこまでAIが使えるか」「どんな業務には向かないか」を学べれば十分な収穫です。</p>
+<h2 id="pitfalls">失敗する企業の共通点</h2>
+<p>より詳しい失敗パターンの分析は<a href="/blog/ai-failure-patterns">AI導入で失敗する中小企業の共通点と7つの落とし穴</a>をご覧ください。主な共通点として：</p>
+<ul>
+  <li>目的なくツールを導入する</li>
+  <li>現場を巻き込まず経営主導で進める</li>
+  <li>効果測定の仕組みを作らない</li>
+  <li>PoC後に全社展開のロードマップを持たない</li>
+</ul>
 
-        <h2>【ステップ4】効果測定と改善</h2>
-        <p>PoC期間が終わったら、必ず効果測定を行います。ステップ1で定量化した業務時間と比較し、削減効果・品質変化・現場満足度を評価します。</p>
-        <p>評価の観点は以下の3軸で整理すると分かりやすくなります。</p>
-        <ul>
-            <li><strong>定量効果</strong>：作業時間、処理件数、エラー率、コストなどの数値変化</li>
-            <li><strong>定性効果</strong>：現場の使いやすさ、業務ストレスの変化、顧客からの反応</li>
-            <li><strong>運用上の課題</strong>：精度のばらつき、想定外のケース、教育コスト</li>
-        </ul>
-        <p>結果に応じて、「本格導入する」「条件を変えて再PoC」「対象業務を変更」のいずれかを判断します。ここで重要なのは、<strong>うまくいかなかった場合に撤退判断ができること</strong>です。「導入したから何が何でも続ける」ではなく、データに基づいて柔軟に方針転換できる体制が、中長期のAI活用を支えます。</p>
-        <p>また、AIは「導入して終わり」ではなく、プロンプトの工夫やデータの追加学習で精度が向上していきます。<strong>運用しながら磨き込む</strong>という前提を、経営層も現場も共有しておきましょう。</p>
+<div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;">
+  <p style="margin:0 0 0.5rem;font-weight:bold;">📩 AI導入・業務効率化を伴走支援します</p>
+  <p style="margin:0 0 1rem;">オービット合同会社では、中小企業のAI活用推進を経営目線でサポートします。まずは無料相談からどうぞ。</p>
+  <a href="/contact" style="display:inline-block;background:#2563eb;color:#fff;padding:0.75rem 2rem;border-radius:6px;text-decoration:none;font-weight:bold;">無料相談はこちら →</a>
+</div>
 
-        <h2>【ステップ5】全社展開と仕組み化</h2>
-        <p>PoCで効果が確認できたら、いよいよ他部署・他業務への展開フェーズです。ただし、ここでも一気に広げず、横展開の優先順位を整理します。</p>
-        <p>全社展開で押さえたい仕組みは次の4つです。</p>
-        <ol>
-            <li><strong>社内ガイドラインの整備</strong>：使ってよいAIサービス、入力してはいけない情報、トラブル時の連絡先などを文書化する。</li>
-            <li><strong>教育・トレーニング</strong>：プロンプトの書き方、業務での活用事例を社内勉強会で共有する。AIを「触ったことがある人」を増やす。</li>
-            <li><strong>推進担当の設置</strong>：兼任でも構わないので、AI活用の旗振り役を任命する。質問の窓口があるだけで、現場の活用率が大きく変わる。</li>
-            <li><strong>効果のモニタリング</strong>：四半期ごとに利用状況・効果・課題をレビューし、次の打ち手につなげる。</li>
-        </ol>
-        <p>このフェーズまで来ると、AI導入は単なるツール導入ではなく、<strong>組織の働き方そのものを変える取り組み</strong>になります。ここから初めて「DX」と呼べる変革が始まる、と言ってもよいでしょう。</p>
-
-        <h2>まとめ</h2>
-        <p>中小企業のAI導入は、流行りに振り回されず、自社の課題から逆算して進めることが成功の鍵です。本記事の5ステップを改めて整理します。</p>
-        <ol>
-            <li>現状の業務課題を棚卸しする</li>
-            <li>AI化できる業務を特定する</li>
-            <li>スモールスタートで試す（PoC）</li>
-            <li>効果測定と改善</li>
-            <li>全社展開と仕組み化</li>
-        </ol>
-        <p>大切なのは、いきなり完璧を目指さず、<strong>「小さく始めて、学びながら広げる」</strong>姿勢です。最初の1業務でAI活用の手応えを掴めれば、社内の景色は確実に変わります。また、推進担当者の確保が難しい場合は、<a href="/blog/gyomu-koritsu-idea-30.html">業務効率化のアイデアを体系的に整理する</a>ところから着手するのも有効なアプローチです。</p>
-        <p>「自社の業務でどこからAI化できるか整理してほしい」「PoCを伴走してほしい」といったご相談は、オービット合同会社までお気軽にお寄せください。経営課題の棚卸しから運用定着まで、一気通貫でご支援いたします。</p>
-    </article>
-
-    <div class="article-cta">
-        <div class="article-cta-box">
-            <h3>業務効率化・AI導入のご相談はお気軽に</h3>
-            <p>オービット合同会社は、中小企業の経営課題をデジタルの力で解決します。<br>まずは無料相談からどうぞ。</p>
-            <a href="../index.html#contact" class="btn">無料相談してみる</a>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">ORBIT</div>
-            <p class="footer-copy">&copy; 2025 オービット合同会社. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="../index.html">ホーム</a></li>
-                <li><a href="../about.html">企業情報</a></li>
-                <li><a href="../works.html">実績</a></li>
-                <li><a href="../blog.html">ブログ</a></li>
-                <li><a href="../index.html#contact">お問い合わせ</a></li>
-            </ul>
-        </div>
-    </footer>
+<section style="background:#f8fafc;padding:1.5rem;border-radius:8px;margin-top:2rem;">
+  <p style="font-weight:bold;margin:0 0 1rem;">📚 関連記事</p>
+  <ul style="margin:0;padding-left:1.5rem;">
+    <li><a href="/blog/ai-failure-patterns">AI導入で失敗する中小企業の共通点と7つの落とし穴</a></li>
+    <li><a href="/blog/backoffice-automation">バックオフィス業務を自動化する方法｜経理・労務・総務のAI活用例</a></li>
+    <li><a href="/blog/chatgpt-business-use-cases">ChatGPTを業務で活用する20の具体例｜部門別の使いどころ</a></li>
+    <li><a href="/blog/gyomu-koritsu-idea-30">業務効率化のアイデア30選｜効果が出やすい順にコンサルが解説</a></li>
+  </ul>
+</section>
+</article>
 </body>
 </html>
-```
